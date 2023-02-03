@@ -1,0 +1,1437 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;500;600;700&display=swap');
+@font-face{
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Helvetica.ttf);
+}
+@font-face{
+  font-family: Helvetica;
+  font-style: bold;
+  font-weight: 600;
+  src: url(../fonts/Helvetica-Bold.ttf);
+}
+@font-face{
+  font-family: Helvetica;
+  font-style: light;
+  font-weight: 300;
+  src: url(../fonts/helvetica-light-587ebe5a59211.ttf);
+}
+
+:root 
+{
+	--text--primary: #058ECE;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	font: normal normal 400 15px/28px Exo;
+  letter-spacing: 0px;
+  color: #646464;
+  opacity: 1;	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.text-primary 
+{
+	color: var(--text--primary)!important;
+}
+a 
+{
+	text-decoration: none;
+}
+.btn  
+{
+	text-align: center;
+	font: normal normal bold 16px/35px Open Sans;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+	min-width: 180px;
+	text-align: center;
+	border-radius: 0px;
+	/*border: 0;*/
+}
+.btn-primary
+{
+	background: transparent;
+	border: 1px solid #B4FFFC;
+}
+.btn-primary:hover
+{
+	background: #00899B 0% 0% no-repeat padding-box;
+	border-color: #00899B;
+}
+.btn-outline-secondary
+{
+	background: transparent;
+	border-color: #313131;
+	color: #3E3E3E;
+}
+.btn-outline-secondary:hover
+{
+	background: #313131;
+	border-color: #313131;
+}
+
+
+
+.primary-link 
+{
+	text-align: left;
+	font: normal normal 300 16px/20px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+	position: relative;	
+}
+.primary-link:hover 
+{
+	color: var(--text--primary);
+}
+.sub-heading 
+{	
+	font: normal normal bold 40px/50px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+}
+.heading
+{	
+	text-align: left;
+	font: normal normal bold 95px/110px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	position: relative;	
+}
+.number 
+{	
+	font: normal normal bold 500px/600px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.big-text
+{
+	font: normal normal bold 300px/300px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;	
+}
+
+
+/*header*/
+
+header 
+{	
+	opacity: 1;
+}
+header .container-fluid
+{
+	padding: 0 50px;
+}
+header .top-bar
+{
+	background: #0089C7 0% 0% no-repeat padding-box;
+}
+header .top-bar .nav-item 
+{	
+	padding: 0.5rem 1rem;
+}
+header .top-bar .nav-item.active 
+{
+	background: #ffffff45;
+}
+header .navbar .navbar-brand img
+{
+	/*width: 210px;*/
+}
+header .navbar .nav-item 
+{
+	/*position: relative;*/
+}
+header .navbar .nav-item .nav-link 
+{
+	text-align: center;
+	font: normal normal 600 18px/24px Exo;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+	margin: 0 8px;	
+	padding: 0 8px;
+}
+header .navbar .nav-item .nav-link:hover, header .navbar .nav-item .nav-link.active 
+{
+	color: #028FCC;	
+	font-weight: 600;
+}
+header .navbar .nav-item svg 
+{
+	width: 20px;
+	height: 20px;
+}
+.navbar-toggler
+{
+	border: 0;
+  width: 40px;
+  height: auto;
+  padding: 0;  
+  
+
+}
+.navbar-toggler div  
+{
+	border-bottom: 4px solid #fff;
+	margin: 5px 0 5px auto;
+
+}
+.navbar-toggler div:nth-child(1)
+{
+	width: 50%;
+	transition: 0.3s;
+}
+.navbar-toggler div:nth-child(2)
+{
+	width: 80%;
+}
+.navbar-toggler div:nth-child(3)
+{
+	width: 60%;
+	transition: 0.3s;
+}
+.navbar-toggler:focus, .navbar-toggler:active
+{
+	box-shadow: none;
+	outline: none;
+	background: none;
+}
+
+
+
+.banner 
+{
+	float: left;
+	width: 100%;
+	position: relative;	
+	height: 100vh;
+}
+.banner .carousel, .banner .carousel .carousel-inner, .banner .carousel .carousel-inner .carousel-item 
+{
+	height: 100%;
+}
+.banner .carousel-caption
+{
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	right: inherit;
+	bottom: inherit;
+	transform: translate(-20%, -50%);
+	margin: 0;
+	/*width: 100%;*/
+	text-align: center;
+}
+.banner .carousel .carousel-inner .carousel-item img 
+{
+	height: 100%;
+	object-position: bottom;
+	object-fit: cover;
+	filter: brightness(0.5);
+}
+.banner .carousel-caption h3 
+{	
+	font: normal normal 200 55px/65px Exo;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+	margin-bottom: 30px;
+}
+
+
+
+
+.banner .carousel-indicators
+{
+	display: block;
+	right: 0px;
+	top: 50%;
+	left: inherit;
+	bottom: inherit;
+	transform: translate(-40px, -50%);
+	margin: 0;
+}
+.banner .carousel-control-prev, .banner .carousel-control-next 
+{
+	position: absolute;	
+	bottom: 30px;
+	top: inherit;
+	width: auto;
+}
+.banner .carousel-control-prev
+{
+	left: 5%;
+}
+.banner .carousel-control-next 
+{
+	right: 5%;
+}
+.mouse-icon
+{
+	filter: brightness(1) invert(1);
+}
+
+.home1 
+{
+	float: left;
+	width: 100%;
+	padding:  0 ;
+	background-image: url(../img/home/abt_bg.webp);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: cover;
+}
+.home1 .home1-content
+{
+	padding: 0 80px;
+}
+.home1 .home1-content h2
+{
+	text-align: left;
+	font: normal normal bold 45px/50px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+}
+.home1 .home1-content p 
+{
+	text-align: left;
+	font: normal normal normal 20px/30px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin: 30px 0;
+}
+.home1 .stl-feature 
+{
+	margin-top: 20px;
+}
+.home1 .stl-feature p 
+{
+	margin: 10px 0 0;
+	font: normal normal 600 12px/30px Exo;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	opacity: 1;
+}
+
+.home2 
+{
+	float: left;
+	width: 100%;
+	padding: 0;	
+}
+.home2 .home2-content
+{
+	padding-left: 70px;
+	overflow-x: hidden;
+}
+.home2 img  
+{
+	margin-top: -30px;
+}
+
+
+.home3 
+{
+	float: left;
+	width: 100%;
+	padding: 100px 0;	
+}
+.home3 h3
+{
+	text-align: left;
+	font: normal normal bold 60px/70px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+}
+.home3 .reviews-box
+{
+	border: 2px solid #000000;
+	opacity: 1;
+	padding: 20px 30px;
+}
+.home3 .reviews-box h5 
+{
+	text-align: left;
+	font: normal normal bold 20px/28px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.home3 .reviews-box p 
+{
+	text-align: left;
+	font: normal normal normal 16px/25px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+/*about page*/
+
+.breadcrumb-item
+{
+	text-align: center;
+	font: normal normal normal 14px/24px Open Sans;
+	letter-spacing: 0px;
+	color: #646464;
+	opacity: 1;
+	text-transform: uppercase;
+}
+.breadcrumb-item a 
+{
+	color: #7E7E7E;
+}
+.breadcrumb-item+.breadcrumb-item::before
+{
+	content: '|';
+	color: #646464;	
+}
+.breadcrumb-item.active
+{
+	font: normal normal normal 14px/24px Open Sans;
+	letter-spacing: 0px;
+	color: #646464;
+	opacity: 1;
+}
+.page-banner
+{
+	float: left;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: #000;
+}
+.page-banner .container 
+{
+	position: relative;
+	height: 100%;
+}
+.page-title
+{
+	text-align: left;
+	font: normal normal normal 50px/60px Helvetica;
+	letter-spacing: 24.8px;
+	color: #FFFFFF;
+	opacity: 1;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+}
+.contact-banner
+{
+	height: 50vh;
+	background-position: bottom;
+}
+.career-banner
+{
+	height: 70vh;
+	/*background-position: bottom;*/
+}
+
+.about2 
+{
+	float: left;
+	width: 100%;
+	padding: 50px 0;	
+	opacity: 1;	
+}
+.about2 .about-box
+{
+	padding: 0 110px;
+}
+.about2 .about-box h4
+{
+	text-align: left;	
+}
+.about2 .about-box p
+{
+	text-align: left;
+	font: normal normal normal 17px/30px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.about3, .about4 
+{
+	padding: 50px 0;
+	float: left;
+	width: 100%;
+}
+.about5 
+{
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+	overflow-x: hidden;
+}
+.about5 .feature-slider .owl-stage-outer
+{
+	overflow: inherit;
+}
+
+.about5 .feature-slider .owl-item img 
+{
+	transform: scaleY(0.8);		
+}
+.about5 .feature-slider .owl-item.active img
+{
+	transform: scale(1.0);
+}
+.about5 .feature-slider button.owl-next, .about5 .feature-slider button.owl-prev 
+{
+	position: absolute;
+	top: 50%;	
+}
+.about5 .feature-slider button.owl-next:hover, .about5 .feature-slider button.owl-prev:hover
+{
+	background: none;
+}
+.about5 .feature-slider button.owl-next
+{
+	right: -30px;
+	transform: translate(10px, -50%);
+}
+.about5 .feature-slider button.owl-prev 
+{
+	left: -30px;
+	transform: translate(-10px, -50%);
+}
+.about5 .feature-slider button.owl-next img , .about5 .feature-slider button.owl-prev img 
+{
+	display: none;
+}
+.about5 .feature-slider button.owl-next span 
+{
+	border-left: 30px solid #000;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	display: inline-block;
+}
+.about5 .feature-slider button.owl-prev span 
+{
+	border-right: 30px solid #000;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	display: inline-block;
+}
+
+/*promotions*/
+.promotions
+{
+	float: left;
+	width: 100%;
+	padding: 100px 0;
+}
+.promotions img 
+{
+	filter: brightness(0.8);
+}
+.promotions img:hover 
+{
+	filter: brightness(1);
+}
+.promotions .promotions-name
+{
+	text-align: left;
+	font: normal normal normal 28px/35px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin-top: 15px;
+}
+
+/*faq*/
+.faq
+{
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+.faq-title 
+{
+	text-align: left;
+	font: normal normal bold 50px/66px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.faq #accordion
+{
+	padding: 100px 50px 0;
+}
+.faq #accordion .card 
+{
+	border-radius: 0;
+	border: 2px solid #0A0A0A;
+	opacity: 1;
+	margin-bottom: 10px;
+}
+.faq #accordion .card .card-header 
+{
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+.faq #accordion .card .card-header a 
+{
+	width: 100%;
+	text-align: left;
+	font: normal normal normal 18px/24px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	width: 100%;
+	display: block;
+	padding: 8px 16px;
+}
+.faq #accordion .card .card-body 
+{
+	text-align: left;
+	font: normal normal normal 18px/24px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;	
+}
+.faq #accordion .card .card-header a
+{
+	position: relative;
+}
+.faq #accordion .card .card-header a:after 
+{
+	content: '-';	
+	position: absolute;
+	right: 16px;
+ 	top: 0;
+  font: normal normal normal 35px/35px Helvetica;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.faq #accordion .card .card-header .collapsed:after
+{
+	content: '+';
+}
+.renovation-tips
+{
+	float: left;
+	width: 100%;
+}
+.renovation-tips .option-box
+{
+	position: absolute;
+	left: -38%;
+  top: 20%;
+  padding: 25px;
+  background: #fff;
+  width: 85%;
+  z-index: 99;
+}
+.renovation-tips .option-2
+{
+	width: 120%;
+	left: -50%;
+	top: 30%;
+}
+.renovation-tips .option-box p 
+{
+	text-align: left;
+	font: normal normal bold 16px/22px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.renovation-tips .last-option
+{
+	margin-top: -200px;
+	/*z-index: -1;*/
+}
+.renovation-tips .option-3
+{
+  top: -50%;
+  left: 20%;
+  width: 100%;
+}
+.renovation-tips .option-4
+{
+  width: 150%;
+  left: inherit;
+  right: 75%;
+  top: 55%;
+}
+
+/*reviews*/
+.reviews
+{
+	float: left;
+	width: 100%;
+	padding: 100px 0;
+}
+.reviews .ratings-box
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border:  1px solid #000;
+	width: 270px;
+	padding: 15px;
+	float: left;
+	margin-right: 15px; 
+	margin-bottom: 25px;
+}
+.reviews .ratings-box .main-img
+{	
+	width: 26px;
+}
+.reviews .ratings-box span 
+{
+	text-align: left;
+	font: normal normal bold 28px/30px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.reviews .ratings-box p 
+{
+	text-align: left;
+	font: normal normal bold 18px/24px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin-bottom: 0;
+}
+.reviews .reviews-box
+{	
+	border: 2px solid #000000;
+	opacity: 1;
+	padding: 25px 75px 25px 25px;
+	position: relative;
+	margin-bottom: 25px;
+}
+.reviews .reviews-box h5 
+{
+	text-align: left;
+	font: normal normal bold 20px/25px Helvetica;
+	letter-spacing: 0px;	
+	opacity: 1;
+	color: #000000;
+}
+.reviews .reviews-box p 
+{
+	text-align: left;
+	font: normal normal normal 16px/24px Helvetica;
+	letter-spacing: 0px;	
+	opacity: 1;
+	color: #000000;
+}
+.reviews .reviews-box i 
+{
+	position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;  
+  color: #000000;
+}
+.reviews .reviews-box.has-bg
+{
+	background: #000000 0% 0% no-repeat padding-box;
+}
+.reviews .reviews-box.has-bg p, .reviews .reviews-box.has-bg h5, .reviews .reviews-box.has-bg i 
+{
+	color: #fff;
+}
+
+.careers
+{
+	float: left;
+	width: 100%;
+	padding: 100px 0;
+}
+.careers .text p 
+{
+	text-align: left;
+	font: normal normal normal 27px/35px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.careers .video-section
+{
+	padding-left: 50px;
+}
+.careers .video-section iframe, .careers .video-section video
+{
+	border: 8px solid #000000;
+	margin-bottom: 30px;
+}
+.careers .video-section p, .careers .video-section label 
+{
+	text-align: left;
+	font: normal normal 300 18px/20px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.careers .video-section .form-control 
+{
+	border:  0;
+	border-bottom: 1px solid ;	
+}
+.careers .video-section .upload-file 
+{
+	position: relative;
+}
+.careers .video-section .upload-file .filetype
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.careers .video-section .upload-file img 
+{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+.careers .video-section form .btn 
+{
+	border: 2px solid #000000;
+	border-radius: 26px;
+	opacity: 1;
+	font: normal normal normal 20px/30px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.careers .video-section form .btn:hover 
+{
+	background: #000;
+	color: #fff;
+}
+/*radio button*/
+.radio {
+  margin: 0.5rem 0;
+}
+.radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type=radio] + .radio-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  
+  margin-right: 0.5em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio input[type=radio]:checked + .radio-label:before {
+  background-color: #3197EE;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio input[type=radio]:focus + .radio-label:before {
+  outline: none;
+  border-color: #3197EE;
+}
+.radio input[type=radio]:disabled + .radio-label:before {
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+.radio input[type=radio] + .radio-label:empty:before {
+  margin-right: 0;
+}
+
+.blog
+{
+	padding: 100px 0;
+	float: left;
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+.blog .blog-section 
+{
+
+}
+.blog .blog-section p 
+{
+	text-align: left;
+	font: normal normal bold 35px/45px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin: 20px 0;
+}
+.blog .blog-left
+{
+	margin-left: -30px;
+}
+.blog .number
+{
+	line-height: 0.8;
+}
+.blog .heading 
+{
+	text-align: left;
+	font: normal normal bold 150px/200px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.blog .blog-right 
+{
+	margin-right: -30px;
+}
+.blog .left-section div
+{
+	padding-left: 50px;
+}
+.blog .blog-read-more
+{
+	text-align: left;
+	font: normal normal 300 30px/40px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	padding-right: 50px;
+}
+
+.blog .blog-details-date
+{
+	position: relative;		
+}
+.blog .blog-description
+{
+	margin-top: -100px;
+	padding: 0 50px;
+}
+.blog .blog-description .description 
+{
+	text-align: left;
+	font: normal normal normal 18px/28px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+
+/*services */
+main
+{
+	/*background-image: url(../img/services/service-bg.png);*/
+	background-position: ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	width: 100%;
+}
+
+
+/*contact */
+
+.contact1 
+{
+	float: left;
+	width: 100%;
+	padding: 20px 0 70px;		
+}
+.contact1 .col-lg-9 
+{
+	padding-left: 50px;
+}
+
+.contact1 p 
+{
+	margin-top: 20px;
+	text-align: left;
+	font: normal normal normal 18px/30px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	float: left;
+	width: 100%;
+}
+.contact1 p img 
+{
+	width: 50px;
+	margin-right: 30px;
+	float: left;
+}
+.contact1 p span
+{
+	width: calc(100% - 80px);
+	float: left;
+}
+.form-control 
+{
+	text-align: left;
+	font: normal normal 300 18px/25px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	padding: 8px 15px;
+	border-radius: 0;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 1px solid #000
+}
+.submit-btnn .btn
+{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 1px solid #000000;
+	opacity: 1;
+	width: 100%;
+	color: #000000;
+}
+.submit-btnn .btn:hover
+{
+	color: #fff;
+	background: #000;
+}
+.form-control::placeholder 
+{
+		font: normal normal 300 16px/25px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+}
+
+
+
+
+
+/*footer*/
+footer 
+{
+	float: left;
+	width: 100%;
+	background: #000000 0% 0% no-repeat padding-box;
+	opacity: 1;
+	padding: 50px 0 0px; 
+	text-align: left;
+	text-align: left;
+	font: normal normal normal 14px/24px Open Sans;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+footer ul 
+{
+	list-style: none;
+	padding-left: 0;	
+}
+footer ul li  
+{
+	margin-bottom: 10px;
+}
+footer .footer-menu-title
+{
+	text-align: left;
+	font: normal normal 600 20px/27px Exo;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+footer ul li a, footer a 
+{
+	text-align: left;
+	font: normal normal normal 14px/24px Open Sans;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+footer a:hover 
+{
+	color: var(--text--primary);
+}
+footer .copyright-section
+{	
+	margin-top: 20px;
+}
+footer .copyright-section 
+{
+	padding: 8px 0;
+	/*background: #2B2B2B 0% 0% no-repeat padding-box;*/
+	opacity: 1;
+	color: #fff;
+}
+footer .copyright-section p, footer .copyright-section p a  
+{
+	color: #fff;
+	margin-bottom: 0;
+}
+
+/*floating-icon*/
+.floating-icon
+{
+	position: fixed;
+	bottom: 50px;
+	right: 15px;	
+	z-index: 99;
+}
+
+
+/*media query*/
+
+@media only screen and (min-width: 1499px)
+{
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+	{
+		max-width: 85%;
+	}
+	header .navbar .nav-item .nav-link
+	{
+		font: normal normal 600 24px/34px Exo;
+	}
+	header .navbar .nav-item .nav-link.active 
+	{
+		font: normal normal 600 24px/34px Exo;
+	}
+	header .navbar .navbar-brand img, header .navbar .navbar-brand .footer-logo	
+	{
+		width: 135px;
+	}
+	.banner .carousel-caption h3
+	{
+		font: normal normal 200 90px/100px Exo;
+	}
+	.primary-link
+	{
+		font: normal normal 300 22px/30px Helvetica;
+	}
+	.mouse-icon
+	{
+		width: 40px;
+	}
+	.btn
+	{
+		font: normal normal bold 24px/40px Open Sans;
+	}
+	.home1 .home1-content p
+	{
+		font: normal normal normal 24px/38px Helvetica;	
+	}
+	.home3 h3
+	{
+		font: normal normal bold 70px/80px Helvetica;
+	}
+	.home3 .reviews-box h5
+	{
+		font: normal normal bold 25px/35px Helvetica;
+	}
+	.home3 .reviews-box p 
+	{
+		font: normal normal normal 22px/32px Helvetica;
+	}
+	footer, footer a
+	{
+		font: normal normal normal 22px/38px Open Sans;
+	}
+	.page-title
+	{
+		font: normal normal normal 80px/100px Helvetica;
+	}
+	.sub-heading
+	{
+		font: normal normal bold 60px/75px Helvetica;
+	}
+	.about2 .about-box p
+	{
+		font: normal normal normal 22px/38px Helvetica;
+	}
+	.reviews .ratings-box
+	{
+		width: 360px;
+	}
+	.reviews .ratings-box span
+	{
+		font: normal normal bold 45px/52px Helvetica;
+	}
+	.reviews .ratings-box p
+	{
+		font: normal normal bold 25px/32px Helvetica;
+	}
+	.reviews .ratings-box img
+	{
+		width: 35px;
+	}
+	.reviews .ratings-box .main-img 
+	{
+		width: 40px;
+	}
+	.reviews .ratings-box .google-img
+	{	
+		width: 50px!important;
+	}
+	.reviews .reviews-box
+	{
+		min-height: 450px;
+		padding: 35px 75px 35px 35px;
+	}
+	.reviews .reviews-box i
+	{
+		top: 25px;
+    right: 30px;
+    font-size: 40px;
+	}
+	.reviews .reviews-box h5
+	{
+		font: normal normal bold 28px/38px Helvetica;
+	}
+	.reviews .reviews-box p 
+	{
+		font: normal normal normal 24px/32px Helvetica;
+	}
+	.big-text
+	{
+		font: normal normal bold 355px/320px Helvetica;
+	}
+	.promotions .promotions-name
+	{
+		font: normal normal normal 40px/50px Helvetica;
+	}
+	.faq-title 
+	{
+		font: normal normal bold 70px/95px Helvetica;
+	}
+	.faq #accordion .card .card-header a, .faq #accordion .card .card-body
+	{
+		font: normal normal normal 27px/40px Helvetica;
+	}
+	.faq #accordion .card .card-header a:after
+	{
+		font: normal normal normal 45px/47px Helvetica;
+	}
+	.renovation-tips .option-box p
+	{
+		font: normal normal bold 24px/38px Helvetica;
+	}
+	.blog .blog-section p
+	{
+		font: normal normal bold 50px/60px Helvetica;
+	}
+	.contact1 p
+	{
+		font: normal normal normal 24px/38px Helvetica;
+	}
+	.form-control, .form-control::placeholder 
+	{
+		font: normal normal 300 22px/38px Helvetica;
+	}
+	.careers .video-section p, .careers .video-section label, .careers .video-section .form-control, .careers .video-section .form-control::placeholder
+	{
+		font: normal normal 300 30px/40px Helvetica;
+	}
+	.careers .text p
+	{
+		font: normal normal normal 35px/50px Helvetica;
+	}
+	.careers .video-section form .btn
+	{
+		font: normal normal normal 24px/40px Helvetica;
+		min-width: 250px;
+		border-radius: 35px;
+	}
+	.blog .blog-description .description
+	{
+		font: normal normal normal 25px/38px Helvetica;
+	}
+	.careers .video-section iframe, .careers .video-section video
+	{
+		height: 450px;
+	}
+	.careers .video-section .upload-file img
+	{
+		width: 35px;
+	}
+}
+@media only screen and (max-width: 1199px)
+{
+	.container, .container-lg, .container-md, .container-sm
+	{
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 991px)
+{
+	header
+	{
+		padding: 0;
+	}
+	.banner .carousel-caption3
+	{
+		transform: translate(-50%, -50%);
+	}
+	.heading
+	{
+		font: normal normal bold 55px/65px Helvetica;
+	}
+	.home1 .home1-content
+	{
+		padding: 30px 0 ;
+	}
+	.home2 .home2-content
+	{
+		padding-left: 15px;
+	}
+	.number
+	{
+		font: normal normal bold 300px/300px Helvetica;
+	}
+	.about2 .about-box
+	{
+		padding: 0 15px;
+	}
+	.faq #accordion
+	{
+		padding: 100px 0 0;
+	}
+	.renovation-tips .option-box
+	{
+		position: inherit;
+		top: inherit;
+		left: inherit;
+		bottom: inherit;
+		width: 100%;
+	}
+	.renovation-tips .pe-5, .renovation-tips .ps-5 
+	{
+		padding: 0!important;
+	}
+	.blog .heading
+	{
+		font: normal normal bold 100px/120px Helvetica;
+	}
+	.blog .blog-left
+	{
+		margin-left: 0;
+	}
+	.blog .blog-right 
+	{
+		margin-right: 0;
+	}
+	.blog .left-section div
+	{
+		padding-left: 15px;
+	}
+	.contact1 .col-lg-9
+	{
+		padding-left: 15px;
+	}	
+	
+}
+
+@media only screen and (max-width: 767px)
+{
+	.navbar-collapse
+	{
+		background: #ccc;
+	}
+	header .navbar .nav-item
+	{
+		padding: 5px;
+		text-align: center;
+	}
+	.banner .carousel-caption h3
+	{
+		font: normal normal 200 40px/45px Exo;
+	}
+	.home1
+	{
+		background-position: left;
+	}	
+	.number
+	{
+		font: normal normal bold 200px/200px Helvetica;
+	}
+	footer
+	{
+		padding-bottom: 0;
+	}
+	footer .copyright-section .col-lg-6
+	{
+		padding: 0 15px;
+	}
+	footer .copyright-section .col-lg-6 p 
+	{
+		text-align: center!important;
+	}
+	.page-title
+	{
+		left: 15px;
+	}
+	.big-text
+	{
+		font: normal normal bold 160px/160px Helvetica;
+	}
+	.careers .video-section
+	{
+		padding-left: 0;
+	}
+		
+}
+
+@media only screen and (max-width: 576px)
+{
+	
+	.ratings-box
+	{
+		margin: 15px auto;
+	}
+	.page-title
+	{
+		letter-spacing: 9px;	
+		font: normal normal normal 40px/60px Helvetica;
+	}
+	.faq-title
+	{
+		font: normal normal bold 40px/56px Helvetica;
+	}
+}
+@media only screen and (max-width: 425px)
+{
+	
+}
+@media only screen and (max-width: 375px)
+{
+
+}
+
+
+
